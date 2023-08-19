@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job-Republic</title>
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="d-flex justify-content-start">
+        <div class="me-4">
+          <input
+            type="radio"
+            class="company_profile_radio"
+            name="company_profile_radio"
+            id="tender_radio"
+          /><label onclick="tender_radio()" for="tender_radio">Tenders</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            checked
+            class="company_profile_radio"
+            name="company_profile_radio"
+            id="data_radio"
+          /><label onclick="data_radio()" for="data_radio">Base Data</label>
+        </div>
+      </div>
+
+      <div id="tendersdiv" class="row d-flex justify-content-center">
+        
+      </div>
+
+      <div id="basedatadiv" class="mt-4">
+        <div id="basedatatopcard">
+          <div class="d-flex justify-content-start">
+            <p class="me-2 company_basedata_name">Jerome</p>
+            <p class="company_basedata_name">Bell</p>
+          </div>
+          <div>
+            <p class="company_basedata_details">0176 41474606</p>
+            <p class="company_basedata_details">davidkumar1504@gmail.com</p>
+          </div>
+        </div>
+
+        <div id="basedatatopcard" class="mt-5">
+          <div class="d-flex justify-content-start">
+            <p class="me-2 company_basedata_detail">Contact Person:</p>
+            <p class="company_basedata_detail"><strong>Bell</strong></p>
+          </div>
+          <div class="d-flex justify-content-start">
+            <p class="me-2 company_basedata_detail">Location:</p>
+            <p class="company_basedata_detail">
+              <strong>Bruchhausenerstra&szlig;e 36, 59759 Arnsberg</strong>
+            </p>
+          </div>
+          <div class="d-flex justify-content-start">
+            <p class="me-2 company_basedata_detail">Companyname:</p>
+            <p class="company_basedata_detail"><strong>Concly</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function tender_radio() {
+        document.getElementById("basedatadiv").style.display = "none";
+        document.getElementById("tendersdiv").style.display = "inline";
+      }
+      function data_radio() {
+        document.getElementById("basedatadiv").style.display = "inline";
+        document.getElementById("tendersdiv").style.display = "none";
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

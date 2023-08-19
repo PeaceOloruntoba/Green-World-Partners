@@ -1,0 +1,117 @@
+.admin_navdiv{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 282.053px;
+    padding: 30px;
+}
+.admin_navlink{
+    color:#6C757D;
+}
+
+.admin_navlink:active{
+    color: #FFF;
+}
+
+.admin_navlink:active{
+    color: #FFF;
+}
+
+.admin_navdiv:active{
+    border-radius: 13.153px;
+    background: #5BB85C;
+    padding: 30px;
+    color: #FFF !important;
+}
+
+/*  */
+.companycard{
+    width: 340px !important;
+    height: 249px;
+    border: none !important;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 5px rgba(91, 184, 92, 0.10);
+}
+
+.company_image{
+    width: 108px;
+    height: 108px;
+}
+
+.company_name{
+    color:  #212529;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.company_view_link{
+    color:  #5BB85C;
+    font-size: 16px;
+    font-style: normal;
+    width: 200px;
+    padding: 13px;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    border: 2px solid #5BB85C;
+}
+
+/*  */
+.company_profile_radio{
+    display: none;
+}
+
+.company_profile_radio + label {
+    color: #6C757D;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.company_profile_radio:checked + label {
+    color: #5BB85C;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+/*  */
+
+.company_basedata_name{
+    color: #212529;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.company_basedata_details{
+    color: #6C757D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#basedatatopcard{
+    border-radius: 10px;
+    border: 1px solid var(--grey-3, #DEE2E6); 
+    padding: 32px 95px 21px 32px;
+}
+
+.company_basedata_detail{
+    color: #495057;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

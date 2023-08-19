@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job-Republic</title>
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div>
+        <p id="login_title">Sign in</p>
+        <p id="login_subtitle">
+          Don’t have an account?
+          <a href="./register.html"
+            ><span style="color: #5bb85c">Sign up</span></a
+          >
+        </p>
+      </div>
+
+      <form action="">
+        <div class="mt-5">
+          <p class="login_input_label">Login As</p>
+
+          <div class="d-flex justify-content-between">
+            <div style="display: none">
+              <input type="radio" name="login_account" id="login_applicant" />
+              <label for="login_applicant">Applicant</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="login_account"
+                id="login_company"
+                checked
+              />
+              <label for="login_company">Company</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <p class="login_input_label">Enter E-Mail</p>
+
+          <div class="d-flex justify-content-center">
+            <input
+              type="email"
+              name=""
+              class="px-5"
+              placeholder="Enter your E-Mail"
+              required
+              id=""
+            />
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <p class="login_input_label">Enter Password</p>
+
+          <div class="d-flex justify-content-center">
+            <input
+              type="password"
+              required
+              name=""
+              class="px-5"
+              placeholder="Enter your Password"
+              id=""
+            />
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+          <input id="remember_me" type="checkbox" /><label
+            for="remember_me"
+            style="
+              font-size: 24px !important;
+              color: #757575;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+            >Remember me</label
+          >
+          <a href="./forget_password.html" id="forget_password_link"
+            >Forget Password?</a
+          >
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <button type="submit" value="">Sign in</button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

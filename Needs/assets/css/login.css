@@ -1,0 +1,122 @@
+.container {
+    width: 845px !important;
+}
+
+#login_title {
+    color: var(--primary-2, #31572C);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#login_subtitle {
+    color: #757575;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+input[type="radio"] {
+    width: 34.098px;
+    height: 34.098px;
+    flex-shrink: 0;
+    display: none;
+}
+
+input[type="radio"]+label {
+    color: #737373;
+    font-size: 29.688px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.148px;
+    border: none;
+    border-radius: 17px;
+    text-align: center;
+    width: 390px;
+    background: #F2F2F2;
+    padding: 30px;
+}
+
+input[type="radio"]:checked+label {
+    color: #5BB85C;
+    background-color: rgba(91, 184, 92, 0.1);
+}
+
+.login_input_label {
+    color: #757575;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+input[type="email"], input[type="password"] {
+    width: 845px;
+    height: 102px;
+    border-radius: 10px;
+    border: 1px solid #DEE2E6;
+    background: #F8F9FA;
+    border: none;
+    color: #6C757D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+[type="checkbox"] {
+    position: relative;
+    left: 15px;
+    top: -4px;
+    z-index: 0;
+    -webkit-appearance: none;
+}
+
+[type="checkbox"]+label {
+    position: absolute;
+}
+
+[type="checkbox"]+label::before {
+    width: 39px;
+    height: 39px;
+    border-radius: 5px;
+    border: 2px solid #5BB85C;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+    z-index: 5;
+    position: relative;
+}
+
+[type="checkbox"]:checked+label::before {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    background-color: #5BB85C;
+}
+
+#forget_password_link {
+    color: #5BB85C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    border-radius: 10px;
+    background: #5BB85C;
+    width: 845px;
+    height: 102px;
+    border: none;
+    color: white;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

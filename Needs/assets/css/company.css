@@ -1,0 +1,101 @@
+#company_describtion_search{
+    border-radius: 5px;
+    border: 1px solid  #DEE2E6;
+    background: #F8F9FA;
+    border: none;
+}
+
+#company_location_search{
+    border-radius: 5px;
+    border: 1px solid  #DEE2E6;
+    background:  #F8F9FA;
+    width: 200px;
+    height: 35px;
+    border: none;
+}
+
+
+
+/*  */
+
+.company_navlink{
+    color: #6C757D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.company_navlink:active, .company_navlink:hover{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: underline;
+    background-color: #5BB85C;
+    color: white;
+    width: 140px;
+    text-align: center;
+}
+
+/*  */
+
+.company_credit_card{
+    border: none !important;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 5px rgba(91, 184, 92, 0.10);
+    height: 550px !important;
+}
+
+.company_credit_title{
+    color: #212529;
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.company_credit_price{
+    color: #4F772D;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+span{
+    font-size: 20px;
+    color: #495057;
+}
+
+.company_credit_details{
+    color: #495057;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.compnay_credit_button{
+    color: var(--grey-3, #DEE2E6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 16px 48px;
+    background: #5BB85C;
+    line-height: normal;
+    border: none;
+}
+
+#credit_page_title{
+    color: #212529;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
