@@ -4,7 +4,18 @@
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
-
+        <!-- Applicant -->
+        <div>
+            <x-input-label for="applicant" :value="__('Applicant')" />
+            <x-text-input id="applicant" class="block mt-1 w-full" type="text" name="applicant" required />
+            <x-input-error :messages="$errors->get('applicant')" class="mt-2" />
+        </div>
+        <!-- Company -->
+        <div>
+            <x-input-label for="company" :value="__('Company')" />
+            <x-text-input id="company" class="block mt-1 w-full" type="text" name="company" required />
+            <x-input-error :messages="$errors->get('company')" class="mt-2" />
+        </div>
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
@@ -35,12 +46,12 @@
         <div class="flex items-center justify-end mt-4">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
+                    {{ __('Forgot password?') }}
                 </a>
             @endif
 
             <x-primary-button class="ml-3">
-                {{ __('Log in') }}
+                {{ __('Sign In') }}
             </x-primary-button>
         </div>
     </form>

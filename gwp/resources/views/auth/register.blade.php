@@ -1,4 +1,84 @@
 <x-guest-layout>
+
+<form action="">
+        <div class="mt-5">
+          <p class="replace_input_label">Sign up as</p>
+
+          <div class="d-flex justify-content-between">
+            <div style="display: none">
+              <input
+                type="radio"
+                name="register_account"
+                id="register_applicant"
+              />
+              <label for="replace_applicant">Applicant</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="register_account"
+                id="register_company"
+                checked
+              />
+              <label for="register_company">Company</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="mt-3">
+              <p class="replace_input_label">Enter Location</p>
+
+              <div class="d-flex justify-content-center">
+                <input
+                  type="text"
+                  name=""
+                  class="px-5"
+                  placeholder="Enter your Location"
+                  required
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="mt-5">
+              <p class="replace_input_label">Enter Companyname</p>
+
+              <div class="d-flex justify-content-center">
+                <input
+                  type="text"
+                  required
+                  name=""
+                  class="px-5"
+                  placeholder="Enter your Companyname"
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        <div class="d-flex justify-content-center mt-4">
+          <input id="remember_me" type="checkbox" required /><label
+            for="remember_me"
+            style="
+              font-size: 24px !important;
+              color: #757575;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            "
+            >Ich akzeptiere die <a>AGB</a> und
+            <a>Datenschutzerkl&auml;rung.</a></label
+          >
+        </div>
+      </form>
+
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -35,7 +115,6 @@
             <x-text-input id="password_confirmation" class="block mt-1 w-full"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password" />
-
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
@@ -45,7 +124,7 @@
             </a>
 
             <x-primary-button class="ml-4">
-                {{ __('Register') }}
+                {{ __('Sign Up') }}
             </x-primary-button>
         </div>
     </form>
